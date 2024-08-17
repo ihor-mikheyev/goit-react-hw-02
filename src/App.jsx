@@ -14,7 +14,7 @@ function App() {
   });
   
   useEffect(() => { 
-    window.localStorage.setItem(KEY, JSON.stringify(feedback)), [feedback]
+    window.localStorage.setItem(KEY, JSON.stringify(feedback), [feedback])
   })
  
 const changeCount = (key) => { 

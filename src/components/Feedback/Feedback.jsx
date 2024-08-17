@@ -4,6 +4,6 @@ export default function Feedback({ object: { good, neutral, bad }, total, positi
         <p>Neutral: {neutral}</p>
         <p>Bad: {bad}</p>
         {total > 0 && <p>Total: {total}</p>}
-        {positive > 0 && <p>Positive: { positive + "%"} </p>}
+        {positive > 0 && <p>Positive: { positive}% </p>}
     </div>
 }

@@ -13,10 +13,10 @@ function App() {
     return savedObject ? JSON.parse(savedObject) : { good: 0, neutral: 0, bad: 0 };
   });
   
-  useEffect(() => { 
-    window.localStorage.setItem(KEY, JSON.stringify(feedback), [feedback])
-  })
- 
+  useEffect(() => {
+    window.localStorage.setItem(KEY, JSON.stringify(feedback))
+  }, [feedback])
+
 const changeCount = (key) => { 
   setFeedback({
     ...feedback, [key]: feedback[key] + 1
